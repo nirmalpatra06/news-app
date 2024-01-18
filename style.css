@@ -71,10 +71,14 @@ nav p {
   padding-inline: 10px;
   border-radius: 4px;
   border: none;
+  outline: none;
 }
 .search-box button:hover {
   background-color: #1fa5a5;
   color: #fff;
+}
+.search-box button:active {
+  color: red;
 }
 /* main  Card container */
 main {
