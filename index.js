@@ -43,14 +43,14 @@ function fillData(cardClone, article) {
   newsDesc.innerText = article.description;
 
   cardClone.firstElementChild.addEventListener("click", () => {
-    window.open(article.url, "_blank");
+  window.open(article.url, "_blank");
   });
 }
 async function getNews(query) {
   try {
     const res = await fetch(`${url}${query}&apiKey=${apiKey}`);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     generateHTML(data.articles);
   } catch {
     alert("Failed to load Data");
